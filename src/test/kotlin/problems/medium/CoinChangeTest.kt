@@ -1,17 +1,11 @@
 package problems.medium
 
-import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-class CoinChangeTest {
+internal class CoinChangeTest {
 
     private var solution = CoinChange()
-
-    @BeforeEach
-    fun setUp() {
-        solution = CoinChange()
-    }
 
     @Test
     fun coinChange_ShouldSatisfy_Example1() {

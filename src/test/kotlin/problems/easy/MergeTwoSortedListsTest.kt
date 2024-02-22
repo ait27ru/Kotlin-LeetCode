@@ -1,18 +1,11 @@
 package problems.easy
 
-import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-import org.junit.jupiter.api.Assertions.*
-
-class MergeTwoSortedListsTest {
+internal class MergeTwoSortedListsTest {
 
     private var solution = MergeTwoSortedLists()
-
-    @BeforeEach
-    fun setUp() {
-        solution = MergeTwoSortedLists()
-    }
 
     @Test
     fun mergeTwoLists_ShouldSatisfy_Example1() {

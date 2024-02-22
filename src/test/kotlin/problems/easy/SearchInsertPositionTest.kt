@@ -1,17 +1,11 @@
 package problems.easy
 
-import org.junit.jupiter.api.Assertions.*
-import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class SearchInsertPositionTest {
+internal class SearchInsertPositionTest {
 
     private var solution = SearchInsertPosition()
-
-    @BeforeEach
-    fun setUp() {
-        solution = SearchInsertPosition()
-    }
 
     @Test
     fun searchInsert_ShouldSatisfy_Example1() {

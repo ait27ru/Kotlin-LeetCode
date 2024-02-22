@@ -1,18 +1,11 @@
 package problems.easy
 
-import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-import org.junit.jupiter.api.Assertions.*
-
-class LongestCommonPrefixTest {
+internal class LongestCommonPrefixTest {
 
     private var solution = LongestCommonPrefix()
-
-    @BeforeEach
-    fun setUp() {
-        solution = LongestCommonPrefix()
-    }
 
     @Test
     fun longestCommonPrefix_ShouldSatisfy_Example1() {

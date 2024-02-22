@@ -1,17 +1,11 @@
 package problems.easy
 
-import org.junit.jupiter.api.Assertions.*
-import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Assertions.assertIterableEquals
 import org.junit.jupiter.api.Test
 
-class BinaryTreePostorderTraversalTest {
+internal class BinaryTreePostorderTraversalTest {
 
     private var solution = BinaryTreePostorderTraversal()
-
-    @BeforeEach
-    fun setUp() {
-        solution = BinaryTreePostorderTraversal()
-    }
 
     @Test
     fun postorderTraversal_ShouldReturnListWithAllTreeNodesPostorder() {

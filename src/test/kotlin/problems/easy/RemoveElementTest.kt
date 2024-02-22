@@ -1,17 +1,12 @@
 package problems.easy
 
-import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Assertions.assertArrayEquals
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-import org.junit.jupiter.api.Assertions.*
+internal class RemoveElementTest {
 
-class RemoveElementTest {
     private var solution = RemoveElement()
-
-    @BeforeEach
-    fun setUp() {
-        solution = RemoveElement()
-    }
 
     @Test
     fun removeElement_ShouldSatisfy_Example1() {

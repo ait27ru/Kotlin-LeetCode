@@ -1,18 +1,11 @@
 package problems.easy
 
-import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Assertions.assertArrayEquals
 import org.junit.jupiter.api.Test
 
-import org.junit.jupiter.api.Assertions.*
-
-class TwoSumTest {
+internal class TwoSumTest {
 
     private var solution = TwoSum()
-
-    @BeforeEach
-    fun setUp() {
-        solution = TwoSum()
-    }
 
     @Test
     fun twoSum_ShouldSatisfy_Example1() {

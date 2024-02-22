@@ -1,18 +1,12 @@
 package problems.easy
 
-import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Assertions.assertFalse
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
-import org.junit.jupiter.api.Assertions.*
-
-class ValidParenthesesTest {
+internal class ValidParenthesesTest {
 
     private var solution = ValidParentheses()
-
-    @BeforeEach
-    fun setUp() {
-        solution = ValidParentheses()
-    }
 
     @Test
     fun isValid_ShouldSatisfy_Example1() {

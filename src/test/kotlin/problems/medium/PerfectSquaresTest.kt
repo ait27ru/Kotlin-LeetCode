@@ -1,17 +1,11 @@
 package problems.medium
 
 import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
-class PerfectSquaresTest {
+internal class PerfectSquaresTest {
 
     private var solution = PerfectSquares()
-
-    @BeforeEach
-    fun setUp() {
-        solution = PerfectSquares()
-    }
 
     @Test
     fun numSquares_ShouldSatisfy_MinValueEdgeCase() {

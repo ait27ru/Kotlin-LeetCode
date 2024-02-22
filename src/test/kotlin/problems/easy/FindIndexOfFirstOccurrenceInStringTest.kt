@@ -1,18 +1,11 @@
 package problems.easy
 
-import org.junit.jupiter.api.BeforeEach
-
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class FindIndexOfFirstOccurrenceInStringTest {
+internal class FindIndexOfFirstOccurrenceInStringTest {
 
     private var solution = FindIndexOfFirstOccurrenceInString()
-
-    @BeforeEach
-    fun setUp() {
-        solution = FindIndexOfFirstOccurrenceInString()
-    }
 
     @Test
     fun strStr_ShouldSatisfy_Example1() {
