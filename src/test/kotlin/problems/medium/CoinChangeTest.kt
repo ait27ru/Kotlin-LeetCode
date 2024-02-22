@@ -2,7 +2,6 @@ package problems.medium
 
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
-import problems.medium.CoinChange
 import kotlin.test.assertEquals
 
 class CoinChangeTest {
