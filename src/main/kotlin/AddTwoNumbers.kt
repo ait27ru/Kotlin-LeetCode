@@ -8,8 +8,26 @@
 
 class AddTwoNumbers {
     fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
+        var list1 = l1
+        var list2 = l2
         val root = ListNode(0)
-        return root
+        var curr = root
+        var carry = 0
+
+        while (list1 != null || list2 != null || carry != 0) {
+            val val1 = list1?.value ?: 0
+            val val2 = list2?.value ?: 0
+            // Figure out the new digit
+            var sum = val1 + val2 + carry
+            carry = sum / 10
+            sum %= 10
+            curr.next = ListNode(sum)
+            // Update pointers
+            curr = curr.next!!
+            list1 = list1?.next
+            list2 = list2?.next
+        }
+        return root.next
     }
 }
 
