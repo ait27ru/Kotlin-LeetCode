@@ -1,3 +1,5 @@
+package problems.medium
+
 import kotlin.math.min
 
 /*
