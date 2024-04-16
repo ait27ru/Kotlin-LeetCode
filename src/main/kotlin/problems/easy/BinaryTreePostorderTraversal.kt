@@ -13,10 +13,10 @@ class BinaryTreePostorderTraversal {
     }
 
     private fun <T : Any> traverse(node: TreeNode<T>?, visit: Visitor<T>) {
-        if (node != null) {
-            traverse(node.left, visit)
-            traverse(node.right, visit)
-            visit(node.value)
+        node?.let {
+            traverse(it.left, visit)
+            traverse(it.right, visit)
+            visit(it.value)
         }
     }
 }
