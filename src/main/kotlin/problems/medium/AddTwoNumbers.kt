@@ -45,25 +45,23 @@ class ListNode(var value: Int) {
     companion object {
         fun create(items: Iterable<Int>): ListNode {
 
-            if (items.firstOrNull() == null) {
-                throw IllegalArgumentException()
+            if (items.none()) {
+                throw IllegalArgumentException("Collection must contain at least one element!")
             }
 
-            var first: ListNode? = null
-            var curr = first
+            lateinit var current: ListNode
+            lateinit var first: ListNode
 
-            for (item in items) {
-                val newNode = ListNode(item)
-
-                if (first == null) {
-                    first = newNode
-                    curr = first
-                    continue
+            items.forEachIndexed { index, item ->
+                if (index == 0) {
+                    first = ListNode(item)
+                    current = first
+                } else {
+                    current.next = ListNode(item)
+                    current = current.next!!
                 }
-                curr!!.next = newNode
-                curr = newNode
             }
-            return first!!
+            return first
         }
     }
 }
